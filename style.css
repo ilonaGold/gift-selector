@@ -1,0 +1,121 @@
+:root {
+  --yellow: #fbf3ab;
+  --light-pink: #f0b9dd;
+  --lavender: #c7b9ff;
+  --deep-pink: #f04c86;
+  --raisin: #2b283a;
+  --red: #ff0000;
+  --white: #fff;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  color: var(--raisin);
+  background: var(--light-pink) url("valentine.jpg") no-repeat center;
+  background-size: cover;
+  font-family: "Karla", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--light-pink);
+  width: 375px;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  padding: 0.75em 0.5em 2em;
+  opacity: 0.87;
+}
+
+h1 {
+  font-size: 2.1rem;
+  color: var(--red);
+  text-shadow: 2px 1px var(--yellow);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+form * {
+  padding: 0.5em;
+  font-size: 1.3rem;
+  font-family: inherit;
+}
+
+form label,
+form button {
+  font-weight: 700;
+}
+
+form *:not(label):not(div),
+.result {
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  border-radius: 5px;
+  border: none;
+}
+
+form label {
+  margin-left: -0.4em;
+}
+
+select {
+  background: var(--white);
+  color: var(--raisin);
+}
+
+.result {
+  background: var(--yellow);
+  color: var(--raisin);
+  min-width: 295px;
+  max-width: 5ch;
+  padding: 0.5em;
+  font-size: 1.4rem;
+  margin: 0.5em auto;
+}
+
+.result span {
+  color: var(--deep-pink);
+  font-weight: 700;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 16px;
+}
+
+div > label {
+  display: inline-block;
+  margin-left: -0.8em;
+}
+
+button {
+  color: var(--white);
+  background: var(--deep-pink);
+  border: none;
+}
+
+button:hover,
+button:focus {
+  transform: scale(1.02);
+  cursor: pointer;
+  color: var(--yellow);
+}
