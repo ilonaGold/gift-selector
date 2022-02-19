@@ -22,8 +22,7 @@ body {
   width: 100%;
   height: 100vh;
   color: var(--raisin);
-  background: var(--light-pink) url("valentine.jpg") no-repeat center;
-  background-size: cover;
+  background: var(--light-pink) url("valentine.jpg") no-repeat center/cover;
   font-family: "Karla", sans-serif;
 }
 
@@ -33,7 +32,8 @@ body {
   justify-content: space-around;
   align-items: center;
   background-color: var(--light-pink);
-  width: 375px;
+  width: 85%;
+  max-width: 390px;
   border-radius: 7px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
@@ -118,4 +118,10 @@ button:focus {
   transform: scale(1.02);
   cursor: pointer;
   color: var(--yellow);
+}
+
+.error {
+  color: var(--red);
+  display: none;
+  font-size: 1.2rem;
 }
